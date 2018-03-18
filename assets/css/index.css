@@ -1,0 +1,272 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url('../fonts/Lato-Black.ttf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: white;
+    text-align: center;
+    font-family: Lato, Helvetica;
+}
+
+i {
+    font-size: 50px !important;
+    color: #333;
+    margin: 20px 10px;
+}
+
+.createdBy {
+    color: #333;
+}
+
+
+body {
+    min-width: 200px;
+}
+
+.row {
+    text-align: center;
+    margin: 0 auto;
+}
+
+body, .hero {
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline:0;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
+
+
+
+/*
+        HERO
+*/
+
+
+.heroContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: white;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+
+.heroWelcome {
+    width: 100%;
+}
+
+.heroContainer .heroText {
+    position: absolute;
+    top: 31%;
+    margin: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.heroText p:nth-child(2) {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.heroText p {
+    margin: 0;
+    margin-right: 50px;
+    font-family: Lato-Light;
+    font-size: 20px;
+}
+
+
+
+
+/*
+        WELCOME
+*/
+
+
+.welcome {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+
+.welcomeText {
+    text-align: left;
+    font-size: 19px;
+}
+
+.welcomeText:first-of-type {
+    margin-top: 30px;
+}
+
+.black {
+    color: #333;
+}
+
+.lato-Black {
+    font-size: 25px;
+    font-family: Lato-Black;
+}
+
+
+
+/*
+        ENGAGE
+*/
+
+.engage, .randomMovieGenerator, .personalWebsite {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    background-color: #333;
+    background: url(../img/battlefield.png) 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
+
+.engage .container-fluid {
+    position: absolute;
+    bottom: 50%;
+}
+
+.engageText {
+    margin-top: 15px;
+}
+
+
+
+/*
+        IMDB RESTful API
+*/
+
+
+.imdbText {
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.resourceIMG {
+    max-width: 100%;
+}
+
+
+/*
+        randomMovieGenerator
+*/
+
+.randomMovieGenerator {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    background: url(../img/movie.png) 50% 0 no-repeat fixed;
+    min-height: 800px;
+}
+
+.randomMovieGenerator .container-fluid {
+    position: absolute;
+    bottom: 50%;
+}
+
+.randomMovieGeneratorText {
+    margin-top: 15px;
+    font-family: Lato-Light;
+}
+
+
+/*
+        PERSONAL WEBSITE
+*/
+
+.personalWebsite {
+    background: url(../img/personalWebsite.png) 50% 0 no-repeat fixed;
+    min-height: 800px;
+}
+
+.personalWebsite .container-fluid {
+    position: absolute;
+    bottom: 50%;
+}
+
+.personalWebsiteHeader {
+    margin-bottom: 25px;
+}
+
+/*
+        MEDIA QUERIES
+*/
+
+
+@media screen and (max-width : 1250px) {
+    .heroText p:nth-child(2) {
+        margin-bottom: 47px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .heroText p:nth-child(2) {
+        margin-bottom: 58px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 936px) {
+    .heroText p:nth-child(2) {
+        margin-bottom: 58px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 741px) {
+    .heroText p:nth-child(2) {
+        margin-bottom: 58px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width : 403px) {
+    .heroText p {
+        margin: 0 !important;
+    }
+}
