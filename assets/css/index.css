@@ -199,7 +199,7 @@ a:focus {
 .randomMovieGenerator {
     -webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-    background: url(../img/movie.png) 50% 0 no-repeat fixed;
+    background: url(../img/movie.PNG) 50% 0 no-repeat fixed;
     min-height: 800px;
 }
 
@@ -219,7 +219,7 @@ a:focus {
 */
 
 .personalWebsite {
-    background: url(../img/personalWebsite.png) 50% 0 no-repeat fixed;
+    background: url(../img/personalWebsite.PNG) 50% 0 no-repeat fixed;
     min-height: 800px;
 }
 
